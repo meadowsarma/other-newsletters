@@ -1,0 +1,18 @@
+- var n = 1;
+// ##################### BEGIN ARTICLES ###################
+| <!--[if mso]><table style='width:100%'><tr><td><center><table style="color:white;width:620px"><tr><td><![endif]-->
+.articles-container
+  .articles
+    while n < 13
+      .article(id=n)
+        h1
+        p
+      .clearfix
+      .divider
+        a.top(href="#")
+          block articles_back-to-top
+        block articles_read-more
+        hr.line
+      - n++
+// ##################### END ARTICLES ###################
+| <!--[if mso]></td></tr></table></center></td></tr></table><![endif]-->

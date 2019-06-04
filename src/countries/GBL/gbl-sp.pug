@@ -1,0 +1,70 @@
+extends ../../layout.pug
+
+//- Header Content
+block header_title
+  | Noticias UnFranchise
+block header_view-in-web-browser
+  | Verlo en el <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-en.html">navegador de internet</a>
+block header_languages
+  <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-en.html">English</a> | <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html">Español</a> | <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-ch.html">中文</a> | <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-fr.html">Français</a> | <a href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-my.html">Malay</a>
+block header_logo
+  <img alt="UnFranchise News" src="http://images.marketamerica.com/creative/ufn/template/logo/logo-unfranchise-news-spanish.png">
+block header_in-this-issue
+  | En esta edición
+block header_links-list
+  tbody
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#1")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#2")
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#3")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#4")
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#5")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#6")
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#7")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#8")
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#9")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#10")
+    tr
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#11")
+      td(valign='top')
+        a(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#12")
+
+//- Articles Content
+block articles_back-to-top
+  | Volver arriba
+block articles_read-more
+  a.top(href="https://www.unfranchise.com/massemail_links/newsletters_GBL/19/ISSUE_##/gbl-sp.html#" + n) Infórmate más
+
+//- Footer Contents
+block footer_connect-with-us
+  | Conéctese con nosotros
+block footer_social
+  <tr>
+    <td>
+      <a href="https://www.facebook.com/marketamerica"><img alt="Facebook" src="http://images.marketamerica.com/creative/ufn/template/icon-facebook.png"></a>
+    </td>
+    <td>
+      <a href="https://twitter.com/marketamerica"><img alt="Twitter" src="http://images.marketamerica.com/creative/ufn/template/icon-twitter.png"></a>
+    </td>
+    <td>
+      <a href="https://plus.google.com/+marketamerica"><img alt="Google+" src="http://images.marketamerica.com/creative/ufn/template/icon-google-plus.png"></a>
+    </td>
+  </tr>
+block footer_info
+  | Si estos mensajes son filtrados como correos electrónicos no deseados, añada <a style="color: white !important" href="mailto:marketamericaemail@marketamerica.com">marketamericaemail@marketamerica.com</a>  a su libreta de direcciones para asegurarse de que lleguen correctamente a su bandeja de entrada. <br><br><a style="color: white !important; font-size:16px;" href="https://www.unfranchise.com/index.cfm?action=profile.unfSMSNotifications">Cancelar suscripción:</a><br>Si desea dejar de recibir nuestros correos electrónicos, <a style="color: white !important" href="https://www.unfranchise.com/index.cfm?action=profile.unfSMSNotifications">pulse aquí</a>, baje hasta la sección de "Notificaciones de correo electrónico" y seleccione "Cancelar suscripción". 
+  // <p class="disclaimer">Los niveles de ingresos mencionados en las Noticias UnFranchise se dan solo con propósitos ilustrativos. No se pretende que representen los ingresos de un Propietario de UnFranchise Independiente promedio de Market America, ni se pretende que representen que cualquier Propietario de UnFranchise Independiente dado obtendrá ingresos por esas cantidades. El éxito de un Propietario de UnFranchise Independiente de Market America dependerá de la cantidad de trabajo, talento y dedicación que invierta en el desarrollo de su negocio de Market America.</p>

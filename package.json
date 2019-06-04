@@ -1,0 +1,12 @@
+{
+  "name": "newsletters",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.0-rc.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "pug-plugin-css-modules": "^0.1.0",
+    "stylus": "^0.54.5"
+  }
+}

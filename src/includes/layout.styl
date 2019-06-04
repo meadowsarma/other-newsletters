@@ -1,0 +1,334 @@
+/////////// Whole page
+body
+  font-size 14px
+  margin 0
+
+body, html
+  font-family Arial, sans-serif
+
+.clearfix
+  clear both
+
+/////////// Header
+
+.header-container
+  background-image url(http://images.marketamerica.com/creative/ufn/template/header-background.jpg)
+  background-color #45b5aa
+
+.header
+  color #ffffff
+
+  a
+    color #ffffff
+    text-decoration none
+    &:hover
+      color #ffffff
+  
+  .links
+    padding-top 15px
+
+    .languages
+      color #ffffff
+      text-align right
+      a
+        color #ffffff
+        text-decoration none
+        &:hover
+          color #ffffff
+    
+    .languages, .list, .logo, .text
+      color #ffffff
+
+    .logo
+      padding 10px 0 15px 0
+
+    .list
+      padding 10px 0
+
+      a
+        text-decoration none
+
+      table
+        border none
+        color #ffffff
+
+      td
+        color #ffffff
+        padding 5px 15px 5px 0
+
+    .text
+      color #ffffff
+      font-size 1.4em
+      font-weight 700
+      padding-top 10px
+
+.title
+  background-color #138071
+
+  .issue
+    padding 5px 0
+
+    .title-strip
+      background-color #138071
+      border 1px solid #138071
+      color #ffffff
+      padding 3px
+      margin: auto
+      
+      .left, .right
+        color #ffffff
+
+      .left
+        text-align left
+      
+      .right
+        text-align right
+
+        a
+          color #ffffff
+          text-decoration none
+          &:hover
+            color #ffffff
+
+/////////// Footer
+
+.footer-container
+  background-color #45b5aa
+
+.footer
+  background-color #45b5aa
+  color #ffffff
+
+  .connect, .info, .links
+    color #ffffff
+
+  .connect
+    background-color #45b5aa
+    color #ffffff
+    padding-top 10px
+    h2
+      color #ffffff
+
+  .links
+    background-color #45b5aa
+    table
+      background-color #45b5aa
+      border none
+    img
+      padding-right 10px
+
+  .info
+    background-color #45b5aa
+    color #ffffff
+    p
+      color #ffffff
+      margin 0
+      padding 10px 0
+    a
+      color #ffffff
+      text-decoration none
+      font-weight bold
+      word-break break-word
+
+.copyright
+  background-color #138071
+  color #ffffff
+  padding 10px 0
+  text-align center
+
+/////////// Articles
+ol, ul
+  display inline-block
+
+sup
+  padding 0
+  font-size 75%
+  vertical-align top
+  line-height 1.20em
+  margin .15em 0 .5em
+
+p a
+  color #45b5aa
+  font-weight bold
+
+a, h1, h2
+  color #45b5aa
+
+a
+  font-weight bold
+  text-decoration none
+
+h1, .article h1, p h1
+  font-size 1.8em !important
+
+h2, .article h2, p h2
+  font-size 1.2em !important
+
+h3, .article h3, p h3
+  color #717171 !important
+  font-size 1.1em
+  font-weight bold
+
+.float-left
+  float left
+  padding 10px 10px 10px 0
+
+.float-right
+  float right
+  padding 10px 0 10px 10px
+
+.float-left, .float-right
+  @media (max-width: 850px)
+    float none
+
+blockquote, li, ol, p, ul
+  line-height 1.45em
+
+.disclaimer
+  font-size 0.75em
+  font-style italic
+
+@media all and (max-width: 599px)
+  .smarttable
+    border 0px;
+
+  .smarttable thead
+    display none
+    border none
+    height 0px
+    margin 0px
+    overflow hidden
+    padding 0px
+    max-width 0px
+    max-height 0px
+
+  .smarttable tr
+    display block
+    width 90%
+    margin 20px auto
+
+  .smarttable td
+    border-bottom 1px solid #ddd
+    display block
+    font-size 15px
+    text-align right
+
+  .smarttable td:before
+    content attr(data-label)
+    float left
+    font-weight bold
+    text-transform uppercase
+
+.articles
+
+  .article
+    padding-top 20px
+    padding-bottom 20px
+
+    h1
+      a
+        color #45b5aa
+        text-decoration none
+
+    p
+      a
+        color #45b5aa
+        text-decoration none
+        font-weight bold
+
+      img
+        padding-bottom 6px
+        max-width 620px
+        @media (max-width: 650px)
+          max-width 500px
+        @media (max-width: 530px)
+          max-width 380px
+        @media (max-width: 420px)
+          max-width 305px
+
+    blockquote, li, ol, p, table, ul
+      color #717171
+
+    img
+      padding-bottom 6px
+      max-width 620px
+      @media (max-width: 650px)
+        max-width 500px
+      @media (max-width: 530px)
+        max-width 380px
+      @media (max-width: 420px)
+        max-width 305px
+
+    .achieve
+      color #666666
+      float left
+      padding 5px
+      width 22%
+
+      img
+        width 100%
+
+    @media (max-width 530px)
+      .achieve
+        height 270px
+        width 46%
+
+  .divider
+    color #45b5aa
+    margin 20px auto
+
+    a
+      color #45b5aa
+      text-decoration none
+      font-weight bold
+
+    .top
+      background-color #ebebeb
+      color #45b5aa
+      font-weight 400
+      padding 7px 8px
+      position relative
+      bottom 10px
+      -webkit-transition all 0.3s ease-in
+      transition all 0.3s ease-in
+
+      &:hover
+        background-color #dadada
+
+    .line
+      background-color #bfbfbf
+      border none
+      height 1px
+      margin 10px 0
+
+/////////// Spacing
+
+.header-container, .articles-container, .footer-container
+  @media (max-width: 650px)
+    max-width 650px
+  @media (max-width: 530px)
+    max-width 530px
+  @media (max-width: 420px)
+    max-width 420px
+    min-width 320px
+
+.header, .articles, .footer
+  padding 2px
+  margin auto
+  width 620px
+  @media (max-width: 650px)
+    width 500px
+  @media (max-width: 530px)
+    width 380px
+  @media (max-width: 420px)
+    width 305px
+
+
+.left, .right
+  width (620 / 2)px
+  @media (max-width: 650px)
+    width (500 / 2)px
+  @media (max-width: 530px)
+    width (380 / 2)px
+  @media (max-width: 420px)
+    width (305 / 2)px

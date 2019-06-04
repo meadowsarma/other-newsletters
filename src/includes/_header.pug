@@ -1,0 +1,29 @@
+// ##################### BEGIN HEADER ###################
+
+| <!--[if mso]><style type="text/css">body, table, td {font-family: Arial, Helvetica, sans-serif !important;}.img-list {list-style: none !important;}p a{color:#45b5aa !important}.info p a {color: white !important}</style><![endif]-->
+.header-container
+  .title
+    .issue
+      | <!--[if mso]><table style="background-color: #138071; border: 1px solid #138071; color: white; width:100%"><tr><td style="vertical-align: middle; color:#ffffff;"><center><![endif]-->
+      table.title-strip
+        tr
+          td.left
+            block header_title
+          td.right 
+            block header_view-in-web-browser
+      | <!--[if mso]></center></td></tr></table><![endif]-->
+  .header
+    | <!--[if mso]><table style="background-color: #45b5aa; color: white; width:100%"><tr><td><center><table style="color:white;width:620px"><![endif]-->
+    .links
+      .languages
+        block header_languages
+      .logo
+        block header_logo
+      .text 
+        block header_in-this-issue
+      .list
+        table
+          block header_links-list
+    | <!--[if mso]></table></center></td></tr></table><![endif]-->
+
+// ##################### END HEADER #####################

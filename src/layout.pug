@@ -1,0 +1,13 @@
+doctype html
+html 
+  head
+    meta(content="width=device-width, initial-scale=1" charset="utf-8" name="viewport")
+    block title
+    style
+      //- This is a little weird right now... it has to be compiled first.
+      include ../build/layout.css
+
+  body
+    include includes/_header.pug
+    include includes/_articles.pug
+    include includes/_footer.pug
