@@ -97,6 +97,9 @@ body, html
 .article-container
   &.b
     background-color #e6e6e6
+    .article-header, .h1, .h2, .h3
+      background-color #e6e6e6
+
   &.c
     background rgb(0,145,179)
     background -moz-linear-gradient(90deg, rgba(0,145,179,1) 0%, rgba(30,156,215,1) 18%, rgba(46,49,146,1) 75%, rgba(27,20,100,1) 100%)
@@ -106,6 +109,7 @@ body, html
 
 .article-header
   padding-bottom 10px
+  text-align center
 
 ol, ul
   display inline-block
@@ -153,7 +157,7 @@ blockquote, li, ol, p, ul
   margin 10px 0
   
   td
-    font-size 12px
+    font-size 14px
 
 @media all and (max-width: 650px)
   .smarttable
@@ -183,7 +187,6 @@ blockquote, li, ol, p, ul
 
 .article
   text-align center
-  &.c .h1
     color #fff
   .h1
     font-size 50px
