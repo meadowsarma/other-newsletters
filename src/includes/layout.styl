@@ -1,10 +1,12 @@
 /////////// Whole page
 body
+  color #444
   font-size 14px
   margin 0
 
 body, html
   font-family Arial, sans-serif
+  overflow-x hidden
 
 .clearfix
   clear both
@@ -12,113 +14,68 @@ body, html
 /////////// Header
 
 .header-container
-  background-image url(http://images.marketamerica.com/creative/ufn/template/header-background.jpg)
-  background-color #45b5aa
+  background-color #0091B3
 
 .header
   color #ffffff
+  display table-cell
+  height 422px
+  width: 100%
+  vertical-align middle
 
-  a
-    color #ffffff
-    text-decoration none
-    &:hover
-      color #ffffff
-  
-  .links
-    padding-top 15px
-
-    .languages
-      color #ffffff
-      text-align right
-      a
-        color #ffffff
-        text-decoration none
-        &:hover
-          color #ffffff
-    
-    .languages, .list, .logo, .text
-      color #ffffff
-
-    .logo
-      padding 10px 0 15px 0
-
-    .list
-      padding 10px 0
-
-      a
-        text-decoration none
-
-      table
-        border none
-        color #ffffff
-
-      td
-        color #ffffff
-        padding 5px 15px 5px 0
-
-    .text
-      color #ffffff
-      font-size 1.4em
-      font-weight 700
-      padding-top 10px
+  span 
+    font-weight bold
+  .lg
+    font-size 50px
+  .md
+    font-size 25px
 
 .title
-  background-color #138071
+  background-color white
 
-  .issue
-    padding 5px 0
+.issue
+  padding 5px 0
 
-    .title-strip
-      background-color #138071
-      border 1px solid #138071
-      color #ffffff
-      padding 3px
-      margin: auto
-      
-      .left, .right
-        color #ffffff
+.title-strip
+  padding 5px
+  margin: auto
+  text-align center
 
-      .left
-        text-align left
-      
-      .right
-        text-align right
+  img
+    padding 5px
 
-        a
-          color #ffffff
-          text-decoration none
-          &:hover
-            color #ffffff
+  a
+    padding 10px 5px
 
 /////////// Footer
 
 .footer-container
-  background-color #45b5aa
+  background-color #0091B3
 
 .footer
-  background-color #45b5aa
+  background-color #0091B3
   color #ffffff
 
   .connect, .info, .links
     color #ffffff
 
   .connect
-    background-color #45b5aa
+    background-color #0091B3
     color #ffffff
     padding-top 10px
     h2
       color #ffffff
 
   .links
-    background-color #45b5aa
+    background-color #0091B3
     table
-      background-color #45b5aa
+      background-color #0091B3
       border none
     img
       padding-right 10px
 
   .info
-    background-color #45b5aa
+    background-color #0091B3
     color #ffffff
     p
       color #ffffff
@@ -131,12 +88,25 @@ body, html
       word-break break-word
 
 .copyright
-  background-color #138071
+  background-color #0091B3
   color #ffffff
   padding 10px 0
   text-align center
 
 /////////// Articles
+.article-container
+  &.b
+    background-color #e6e6e6
+  &.c
+    background rgb(0,145,179)
+    background -moz-linear-gradient(90deg, rgba(0,145,179,1) 0%, rgba(30,156,215,1) 18%, rgba(46,49,146,1) 75%, rgba(27,20,100,1) 100%)
+    background -webkit-linear-gradient(90deg, rgba(0,145,179,1) 0%, rgba(30,156,215,1) 18%, rgba(46,49,146,1) 75%, rgba(27,20,100,1) 100%)
+    background linear-gradient(90deg, rgba(0,145,179,1) 0%, rgba(30,156,215,1) 18%, rgba(46,49,146,1) 75%, rgba(27,20,100,1) 100%)
+    color white
+
+.article-header
+  padding-bottom 10px
+
 ol, ul
   display inline-block
 
@@ -148,26 +118,15 @@ sup
   margin .15em 0 .5em
 
 p a
-  color #45b5aa
   font-weight bold
-
-a, h1, h2
-  color #45b5aa
+  text-decoration underline
 
 a
   font-weight bold
-  text-decoration none
+  text-decoration underline
 
-h1, .article h1, p h1
-  font-size 1.8em !important
-
-h2, .article h2, p h2
-  font-size 1.2em !important
-
-h3, .article h3, p h3
-  color #717171 !important
-  font-size 1.1em
-  font-weight bold
+  &:visited
+    color #444
 
 .float-left
   float left
@@ -188,7 +147,15 @@ blockquote, li, ol, p, ul
   font-size 0.75em
   font-style italic
 
-@media all and (max-width: 599px)
+.smarttable
+  text-align center
+  width 100%
+  margin 10px 0
+  
+  td
+    font-size 12px
+
+@media all and (max-width: 650px)
   .smarttable
     border 0px;
 
@@ -204,106 +171,65 @@ blockquote, li, ol, p, ul
 
   .smarttable tr
     display block
-    width 90%
-    margin 20px auto
+    margin auto
+    margin-left -10px
+    margin-right -10px
+    text-align center
 
   .smarttable td
-    border-bottom 1px solid #ddd
-    display block
-    font-size 15px
-    text-align right
+    display inline-block
+    text-align center
+    width 48%
 
-  .smarttable td:before
-    content attr(data-label)
-    float left
+.article
+  text-align center
+  &.c .h1
+    color #fff
+  .h1
+    font-size 50px
     font-weight bold
-    text-transform uppercase
+    max-width none !important
+  .h2
+    font-size 25px
+    font-weight bold
 
-.articles
+  .h3
+    font-size 18px
+  
+  .h1, .h2, .h3
+    margin auto
+    max-width 75%
+    text-align center
+  
+  @media (max-width 530px)
+    .h1, .h2, .h3
+      max-width none
 
-  .article
-    padding-top 20px
-    padding-bottom 20px
-
-    h1
-      a
-        color #45b5aa
-        text-decoration none
-
-    p
-      a
-        color #45b5aa
-        text-decoration none
-        font-weight bold
-
-      img
-        padding-bottom 6px
-        max-width 620px
-        @media (max-width: 650px)
-          max-width 500px
-        @media (max-width: 530px)
-          max-width 380px
-        @media (max-width: 420px)
-          max-width 305px
-
-    blockquote, li, ol, p, table, ul
-      color #717171
-
-    img
-      padding-bottom 6px
-      max-width 620px
-      @media (max-width: 650px)
-        max-width 500px
-      @media (max-width: 530px)
-        max-width 380px
-      @media (max-width: 420px)
-        max-width 305px
-
-    .achieve
-      color #666666
-      float left
-      padding 5px
-      width 22%
-
-      img
-        width 100%
-
-    @media (max-width 530px)
-      .achieve
-        height 270px
-        width 46%
-
-  .divider
-    color #45b5aa
-    margin 20px auto
-
+  p
     a
-      color #45b5aa
-      text-decoration none
+      color #444
       font-weight bold
 
-    .top
-      background-color #ebebeb
-      color #45b5aa
-      font-weight 400
-      padding 7px 8px
-      position relative
-      bottom 10px
-      -webkit-transition all 0.3s ease-in
-      transition all 0.3s ease-in
+  img
+    max-width 150px
 
-      &:hover
-        background-color #dadada
+  .achieve
+    color #666666
+    float left
+    padding 5px
+    width 22%
 
-    .line
-      background-color #bfbfbf
-      border none
-      height 1px
-      margin 10px 0
+    img
+      width 100%
+
+  @media (max-width 530px)
+    .achieve
+      height 270px
+      width 46%
 
 /////////// Spacing
 
-.header-container, .articles-container, .footer-container
+.article-container, .footer-container
   @media (max-width: 650px)
     max-width 650px
   @media (max-width: 530px)
@@ -312,8 +238,9 @@ blockquote, li, ol, p, ul
     max-width 420px
     min-width 320px
 
-.header, .articles, .footer
-  padding 2px
+.article, .footer
+  padding-top 30px
+  padding-bottom 30px
   margin auto
   width 620px
   @media (max-width: 650px)
@@ -322,13 +249,3 @@ blockquote, li, ol, p, ul
     width 380px
   @media (max-width: 420px)
     width 305px
-
-
-.left, .right
-  width (620 / 2)px
-  @media (max-width: 650px)
-    width (500 / 2)px
-  @media (max-width: 530px)
-    width (380 / 2)px
-  @media (max-width: 420px)
-    width (305 / 2)px
