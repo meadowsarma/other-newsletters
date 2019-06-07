@@ -1,5 +1,6 @@
 extends ../../layout.pug
 
+
 //- Header Content
 block header_title
   span.md We're excited to share our weekly Global
@@ -10,14 +11,49 @@ block header_title
   br
   br
   span.md #EmailWeeklyN 01
-//- Articles Content
-block text_USA 
-  | 美国
 
-block text_TWN
-  | 台湾
 
-block supervision_coordinator
-  | 收到发酵水淀粉
+//- Article Contents
+block country_USA
+  | United States of America
+  //- As an example, if you needed this to be a link instead:
+  //- a(href="#USA") United States of America
+block country_CAN
+  | Canada
+block country_GBR
+  | United Kingdom
+block country_AUS
+  | Australia
+block country_TWN
+  | Taiwan
+block country_HKG
+  | Hong Kong
+block country_SGP
+  | Singapore
+block country_MYS
+  | Malaysia
+
+block see_story_here
+  a(href="#storyLink") see story here
+
 
 //- Footer Contents
+block hello
+  | Hello!
+block been_up_to
+  | Here's what we've been up to online.
+block twitter
+  a(href="https://twitter.com/unfranchise_USA")
+    img(src="https://via.placeholder.com/300x300")
+block facebook
+  a(href="https://facebook.com/unfranchise_USA")
+    img(src="https://via.placeholder.com/300x300")
+block instagram
+  a(href="https://instagram.com/unfranchise_USA")
+    img(src="https://via.placeholder.com/300x300")
+block youtube
+  a(href="https://youtube.com/users/unfranchise_USA")
+    img(src="https://via.placeholder.com/300x300")
+block pinterest
+  a(href="https://pinterest.com/unfranchise_USA")
+    img(src="https://via.placeholder.com/300x300")

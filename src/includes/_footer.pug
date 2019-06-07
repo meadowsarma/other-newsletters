@@ -4,47 +4,49 @@
 .article-container
   .article
     div.article-header
-      div.h1 Hello!
-      div.h2 Here's what we've been up to online.
+      div.h1
+        block hello
+      div.h2
+        block been_up_to
     table.smarttable(cellpadding="10")
       tr
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
       tr
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
         td
-          a(href="#")
+          a(href="#imageLink")
             img(src="https://via.placeholder.com/300x300")
     | <!--[if mso]></table></center></td></tr></table><![endif]-->
     | <!--[if mso]><table style="background-color: white; color: #444; width:100%"><tr><td style="vertical-align: middle; color:#444;"><center><![endif]-->
     div.footer-links
-      img(src="https://via.placeholder.com/50x50")
+      block twitter
       | <!--[if mso]>&nbsp;<![endif]-->
-      img(src="https://via.placeholder.com/50x50")
+      block facebook
       | <!--[if mso]>&nbsp;<![endif]-->
-      img(src="https://via.placeholder.com/50x50")
+      block instagram
       | <!--[if mso]>&nbsp;<![endif]-->
-      img(src="https://via.placeholder.com/50x50")
+      block youtube
       | <!--[if mso]>&nbsp;<![endif]-->
-      img(src="https://via.placeholder.com/50x50")
+      block pinterest
     div
       strong COPYRIGHT &reg; 2019, MARKET AMERICA INC.
       br
