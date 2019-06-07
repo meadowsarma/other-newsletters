@@ -1,3 +1,5 @@
+$screen-sm-max-image-size = 150px
+
 /////////// Whole page
 body
   color #444
@@ -170,7 +172,7 @@ blockquote, li, ol, p, ul
     td
       div, a
         display inline-block
-        max-width 150px
+        max-width $screen-sm-max-image-size
 
   .smarttable thead
     display none
@@ -185,9 +187,8 @@ blockquote, li, ol, p, ul
   .smarttable tr
     display block
     margin auto
-    margin-left -10px
-    margin-right -10px
     text-align center
+    max-width $screen-sm-max-image-size * 2 // double max image width
 
   .smarttable td
     display inline-block
@@ -223,7 +224,7 @@ blockquote, li, ol, p, ul
       font-weight bold
 
   img
-    max-width 150px
+    max-width $screen-sm-max-image-size
     width 100%
 
   .achieve
