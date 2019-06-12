@@ -3,7 +3,7 @@ $screen-sm-max-image-size = 150px
 /////////// Whole page
 body
   color #444
-  font-size 14px
+  font-size 16px
   margin 0
 
 body, html
@@ -103,7 +103,7 @@ body, html
 .article-container
   &.gray, &.grey
     background-color #e6e6e6
-    .article-header, .h1, .h2, .h3
+    .article-header, .h1, .h2, .h3, .h4
       background-color #e6e6e6
 
   &.blue
@@ -156,14 +156,36 @@ blockquote, li, ol, p, ul
 .disclaimer
   font-size 0.75em
   font-style italic
+  text-align center
 
 .smarttable
-  text-align center
   width 100%
   margin 10px 0
   
   td
-    font-size 14px
+    font-size 16px
+    
+.backToTop
+  width 100%
+  text-align center
+  
+.top
+  background-color: #d2d2d2
+  color: #45b5aa
+  margin: 20px auto 0
+  font-weight:400
+  padding: 7px 8px
+  position: relative
+  bottom: 10px
+  -webkit-transition: all .3s ease-in
+  transition: all .3s ease-in
+  text-decoration: none
+  display: block 
+  max-width: 100px
+  text-align: center
+
+.top:hover
+  background-color: #dadada
 
 @media all and (max-width: 650px)
   .smarttable
@@ -172,7 +194,7 @@ blockquote, li, ol, p, ul
     td
       div, a
         display inline-block
-        max-width $screen-sm-max-image-size
+        max-width $screen-sm-max-image-size * 2 // double max image width - JM
 
   .smarttable thead
     display none
@@ -195,6 +217,12 @@ blockquote, li, ol, p, ul
     text-align center
     width 43%
 
+@media all and (min-width: 651px)
+  .smarttable td
+    display inline-block
+    text-align center
+    width 43%
+
 .article
   text-align center
   .h1
@@ -202,19 +230,23 @@ blockquote, li, ol, p, ul
     font-weight bold
     max-width none !important
   .h2
-    font-size 25px
+    font-size 26px
     font-weight bold
 
   .h3
-    font-size 18px
+    font-size 22px
   
-  .h1, .h2, .h3
+  .h4
+    font-size 18px
+    font-weight bold
+  
+  .h1, .h2, .h3, .h4
     margin auto
     max-width 75%
     text-align center
   
   @media (max-width 530px)
-    .h1, .h2, .h3
+    .h1, .h2, .h3, .h4
       max-width none
 
   p
